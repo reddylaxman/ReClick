@@ -1,0 +1,171 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  margin-top: 25px;
+}
+
+.left-side {
+  flex: 1;
+  margin-right: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.drag-drop-zone {
+  border: 2px dashed #ccc;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+  flex-grow: 1;
+}
+
+.upload-label {
+  cursor: pointer;
+  font-size: 18px;
+  color: #888;
+  display: flex;
+  justify-content: center;
+}
+
+.upload-label i {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+.previews {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.preview-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.preview-image {
+  max-width: 100px;
+  max-height: 100px;
+  width: 1000px;
+  height: 800px;
+  object-fit: cover;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+}
+
+.preview-info {
+  margin-top: 10px;
+  font-size: 12px;
+  text-align: center;
+}
+
+.right-side {
+  flex: 1;
+  max-width: 550px;
+}
+
+.controls-section {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.controls-section h2 {
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+.resize-mode-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.resize-mode-button {
+  flex: 1;
+  padding: 10px;
+  margin: 0 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.resize-mode-button.selected {
+  background-color: #007bff;
+  color: #fff;
+  border-color: #007bff;
+}
+
+.controls {
+  margin-bottom: 20px;
+}
+
+.control-group {
+  margin-bottom: 10px;
+}
+
+.control-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.control-group input[type="number"] {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.control-group input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+.percentage-options {
+  display: flex;
+  justify-content: space-between;
+}
+
+.percentage-options button {
+  flex: 1;
+  padding: 10px;
+  margin: 0 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.percentage-options button.selected {
+  background-color: #007bff;
+  color: #fff;
+  border-color: #007bff;
+}
+
+#resizeButton {
+  width: 100%;
+  padding: 10px;
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#resizeButton:hover {
+  background-color: #218838;
+}
+#resizeButton:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+  opacity: 0.6;
+}

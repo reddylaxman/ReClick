@@ -1,0 +1,42 @@
+.page-container {
+  display: grid;
+  place-items: center;
+  width: 400px;
+  background-color: white;
+  padding-bottom: 20px;
+  margin: auto;
+}
+.custom-form {
+  margin-top: 25px;
+  border: 1px solid black;
+  width: 80%;
+}
+form {
+  margin: auto;
+}
+label {
+  padding: 10px;
+}
+textarea {
+  width: 80%;
+}
+.toast-container {
+  .Toastify__toast {
+    font-family: Arial, sans-serif;
+  }
+
+  .Toastify__toast--success {
+    background: #5cb85c;
+  }
+
+  .Toastify__toast--error {
+    background: #d9534f;
+  }
+
+  .Toastify__close-button {
+    color: #fff;
+  }
+}
+body {
+  background-color: #f0f4f9;
+}

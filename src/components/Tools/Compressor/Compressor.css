@@ -1,0 +1,129 @@
+/* Components/Compressor.css */
+
+.compressor-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  color: #333;
+  font-size: 2em;
+}
+
+p {
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.image-section {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.image-preview {
+  width: 45%;
+  height: 300px;
+  border: 2px dashed #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.image-preview img {
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
+}
+
+.placeholder {
+  color: #999;
+  font-size: 1em;
+}
+
+.drop-area {
+  border: 2px dashed #ccc;
+  border-radius: 10px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  cursor: pointer;
+}
+
+.drop-area:hover {
+  background-color: #f1f1f1;
+}
+
+.upload-input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.compression-controls {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.compression-slider {
+  width: 50%;
+  margin: 20px 0;
+}
+
+.compression-info {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  margin: 10px 0;
+  font-size: 0.9em;
+  color: #333;
+}
+
+.compress-button,
+.reset-button,
+.download-button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 5px;
+  font-size: 1em;
+}
+
+.compress-button {
+  background-color: #28a745;
+  color: #fff;
+}
+
+.compress-button:disabled {
+  background-color: #9e9e9e;
+  cursor: not-allowed;
+}
+
+.reset-button {
+  background-color: #f44336;
+  color: #fff;
+}
+
+.download-button {
+  display: inline-block;
+  background-color: #2196f3;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+.download-button.disabled {
+  pointer-events: none;
+  opacity: 0.5;
+}
