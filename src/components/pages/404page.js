@@ -1,4 +1,5 @@
 import React from "react";
+import {Link} from "react-router-dom";
 import illustration_404 from "./images/illiustration_404.png";
 const PageNotFound = () => {
   return (
@@ -17,12 +18,12 @@ const PageNotFound = () => {
           <p className="text-xl text-gray-600 mb-8">
             Oops! The image you're trying to click on this page doesn't exist.
           </p>
-          <a
-            href="/"
+          <Link
+            to="/"
             className="inline-block px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 transition duration-300"
           >
             Click to Homepage
-          </a>
+          </Link>
         </div>
       </div>
     </div>
